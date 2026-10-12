@@ -2,7 +2,7 @@
   "buildCommand": "npm run install:all && npm run build",
   "outputDirectory": "client/dist",
   "functions": {
-    "api/index.mjs": { "includeFiles": "server/dist/**" }
+    "api/index.js": { "includeFiles": "server/dist/**" }
   },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },

@@ -1,0 +1,17 @@
+{
+  "name": "cinebook-movie-booking-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cinebook — Fullstack Hindi Movie Ticket Booking Platform Inspired by BookMyShow",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f5f5f7;
+    color: #222436;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f2f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f84464;
+}
+
+/* Screen curve visual glow */
+.screen-glow {
+  box-shadow: 0 -12px 30px rgba(56, 189, 248, 0.35);
+}
+
+/* Cinema seat styling */
+.seat-button {
+  transition: all 0.15s ease-in-out;
+}
+.seat-button:not(:disabled):hover {
+  transform: scale(1.15);
+}
